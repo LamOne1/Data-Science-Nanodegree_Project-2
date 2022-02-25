@@ -2,6 +2,8 @@ import sys, os
 # import libraries
 import nltk
 nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger', 'stopwords'])
+from sklearn.externals import joblib
+
 import pickle
 import pandas as pd
 from sqlalchemy import create_engine
@@ -304,7 +306,8 @@ def save_model(model, model_filepath):
         model: trained model
         model_filepath: path of the pickle file
     """       
-    pickle.dump(model, open(model_filepath, "wb"))
+    #pickle.dump(model, open(model_filepath, "wb"))
+    joblib.dump(model,model_filepath+".z")
 
 
 def main():
