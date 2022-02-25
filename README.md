@@ -78,6 +78,7 @@ This components will display the results in a Flask web app.
 
 ```
 
+to run the app, go to the app folder then `python run.py`
 
 # Licensing, Authors, Acknowledgements, etc.
 
