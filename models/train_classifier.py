@@ -288,9 +288,9 @@ def evaluate_model(model, X_test, Y_test, category_names):
     Y_test = np.asarray(Y_test)
     for i in range(len(columns_name)):
         acc = accuracy_score(Y_test[:,i], y_pred[:,i])
-        f1 = f1_score(Y_test[:,i], y_pred[:,i], average='macro')
-        precision = precision_score(Y_test[:,i], y_pred[:,i], average='macro')
-        recall = recall_score(Y_test[:,i], y_pred[:,i], average='macro')
+        f1 = f1_score(Y_test[:,i], y_pred[:,i])
+        precision = precision_score(Y_test[:,i], y_pred[:,i])
+        recall = recall_score(Y_test[:,i], y_pred[:,i])
         
         results.append([acc, f1, precision, recall])
         
