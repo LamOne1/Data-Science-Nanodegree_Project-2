@@ -14,8 +14,16 @@ In this project, we will analyze disaster data to build a model for an API that 
 This project will include a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data.
 Below are a few screenshots of the web app.
 
-![image](https://user-images.githubusercontent.com/97054802/155796723-4d5c6603-657e-45bd-a194-953b6d0e20a1.png)
-![image](https://user-images.githubusercontent.com/97054802/155796782-2d9f9c77-02af-4af5-898d-4af66499d499.png)
+Distribution of Message Genres:
+![image](https://github.com/LamyaMK/Data-Science-Nanodegree_Project-2/blob/main/screenshots/screenshot1.png)
+
+Distribution of Message Categories:
+![image](https://github.com/LamyaMK/Data-Science-Nanodegree_Project-2/blob/main/screenshots/screenshot2.png)
+
+Test example:
+![image](https://github.com/LamyaMK/Data-Science-Nanodegree_Project-2/blob/main/screenshots/screenshot3.png)
+
+
 
 
 # Installations
@@ -73,6 +81,11 @@ This components will display the results in a Flask web app.
 - models
 |- train_classifier.py
 |- classifier.pkl  # saved model 
+
+- screenshots
+|- screenshot1.png
+|- screenshot2.png 
+|- screenshot3.png
 
 - README.md
 
